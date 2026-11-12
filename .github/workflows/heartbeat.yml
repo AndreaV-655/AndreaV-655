@@ -1,0 +1,34 @@
+name: Generate Heartbeat Animation
+
+on:
+  # Se ejecuta automáticamente todos los días a la medianoche UTC
+  schedule:
+    - cron: "0 0 * * *"
+  
+  # Permite ejecutarlo manualmente desde la pestaña "Actions" de tu repositorio
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Necesario para poder hacer commit y push de los cambios
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate SVG
+        run: node script/generate-heart.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add heart-contribution.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update heart heartbeat animation" && git push)
