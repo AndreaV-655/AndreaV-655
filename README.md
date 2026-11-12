@@ -57,7 +57,7 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AndreaV-655&color=39d353&style=flat-square" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=AndreaV-655&label=PROFILE+VIEWS&color=0e75b6&style=for-the-badge&logo=github" alt="Profile Views" />
 </p>
 
 <p align="center">
@@ -66,8 +66,8 @@
 
 ---
 
-### Heartbeat
+### ❤️ Activity Heartbeat
 
 <p align="center">
-  <img src="heart-contribution.svg" alt="Heartbeat Animation" />
+  <img src="heart-contribution.svg" alt="Heartbeat Animation" width="100%" />
 </p>
