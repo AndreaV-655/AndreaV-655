@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.jpg" alt="Header Banner" width="100%" />
+  <img src="banner.gif" alt="Header Banner" width="100%" />
 </p>
 <h1 align="center">I'm a Computer Science Student & Developer</h1>
 <h3 align="center">Passionate about building organized systems, art and documenting every step of the journey.</h3>
