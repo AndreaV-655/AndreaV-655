@@ -1,0 +1,55 @@
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .cell {
+      shape-rendering: crispEdges;
+      rx: 2px;
+      ry: 2px;
+    }
+    @keyframes heartbeat {
+      0% { transform: scale(1); transform-origin: center; }
+      15% { transform: scale(1.15); transform-origin: center; }
+      30% { transform: scale(1); transform-origin: center; }
+      45% { transform: scale(1.1); transform-origin: center; }
+      60% { transform: scale(1); transform-origin: center; }
+      100% { transform: scale(1); transform-origin: center; }
+    }
+    .heart-group {
+      animation: heartbeat 1.2s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Fondo transparente u oscuro según prefieras -->
+  <rect width="100%" height="100%" fill="transparent" />
+
+  <g class="heart-group" transform="translate(350, 40)">
+    <!-- Aquí puedes renderizar los bloques simulando los cuadrados de GitHub -->
+    <rect class="cell" x="15" y="0" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="30" y="0" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="60" y="0" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="75" y="0" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="0" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="15" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="30" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="45" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="60" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="75" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="90" y="15" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="0" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="15" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="30" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="45" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="60" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="75" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="90" y="30" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="15" y="45" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="30" y="45" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="45" y="45" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="60" y="45" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="75" y="45" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="30" y="60" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="45" y="60" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="60" y="60" width="12" height="12" fill="#39d353" />
+<rect class="cell" x="45" y="75" width="12" height="12" fill="#39d353" />
+
+  </g>
+</svg>
