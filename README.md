@@ -30,7 +30,7 @@
 <p align="center">
   <!-- Lenguajes, Web y Herramientas Principales -->
   <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=py,js,html,css,react" alt="Core & Web" />
+    <img src="https://skillicons.dev/icons?i=py,js,html,css,powershell" alt="Core & Web" />
   </a>
   <br/>
   <!-- Backend, Bases de Datos, Motores y Productividad -->
