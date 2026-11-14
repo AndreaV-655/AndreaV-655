@@ -35,7 +35,7 @@
   <br/>
   <!-- Backend, Bases de Datos, Motores y Productividad -->
   <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=postgres,supabase,git,github,unity,notion" alt="Tools & Platforms" />
+    <img src="https://skillicons.dev/icons?i=postgres,supabase,git,github,notion" alt="Tools & Platforms" />
   </a>
 </p>
 
@@ -45,7 +45,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=c,dart,java,vercel" alt="Currently Learning" />
+    <img src="https://skillicons.dev/icons?i=c,dart,java,vercel, unity,react" alt="Currently Learning" />
   </a>
 </p>
 
