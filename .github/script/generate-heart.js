@@ -4,15 +4,15 @@ const fs = require('fs');
 const COLS = 52;
 const ROWS = 7;
 
-// Matriz del corazón (7 filas x 7 columnas) para centrar en la tabla
+// Matriz del corazón ampliada (+2 columnas de ancho: 7 filas x 9 columnas)
 const heartPattern = [
-  [0, 1, 1, 0, 1, 1, 0],
-  [1, 1, 1, 1, 1, 1, 1],
-  [1, 1, 1, 1, 1, 1, 1],
-  [1, 1, 1, 1, 1, 1, 1],
-  [0, 1, 1, 1, 1, 1, 0],
-  [0, 0, 1, 1, 1, 0, 0],
-  [0, 0, 0, 1, 0, 0, 0]
+  [0, 1, 1, 1, 0, 1, 1, 1, 0],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [1, 1, 1, 1, 1, 1, 1, 1, 1],
+  [0, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 1, 1, 1, 1, 1, 0, 0],
+  [0, 0, 0, 0, 1, 0, 0, 0, 0]
 ];
 
 function generateSVG() {
@@ -25,10 +25,15 @@ function generateSVG() {
   const width = gridWidth + padding * 2;
   const height = gridHeight + padding * 2;
 
-  // Coordenada inicial para centrar el corazón de 7x7 dentro de las 52 columnas
-  const startCol = Math.floor((COLS - 7) / 2);
+  const heartCols = heartPattern[0].length;
+  const startCol = Math.floor((COLS - heartCols) / 2);
+
+  // Centro exacto de la cuadrícula para calcular la onda expansiva
+  const centerCol = (COLS - 1) / 2;
+  const centerRow = (ROWS - 1) / 2;
 
   let backgroundCells = '';
+  let rippleCells = '';
   let heartCells = '';
 
   for (let col = 0; col < COLS; col++) {
@@ -36,13 +41,22 @@ function generateSVG() {
       const x = padding + col * (pixelSize + gap);
       const y = padding + row * (pixelSize + gap);
 
-      // Celda de fondo de la tabla de commits (estilo GitHub Dark)
+      // 1. Celda base oscura de la tabla de commits
       backgroundCells += `<rect class="cell" x="${x}" y="${y}" width="${pixelSize}" height="${pixelSize}" fill="#161b22" stroke="#1b1f23" stroke-width="0.5" />\n`;
 
-      // Verificar si esta posición pertenece al corazón
+      // Verificar si la celda pertenece al corazón
       const heartCol = col - startCol;
-      if (heartCol >= 0 && heartCol < 7 && heartPattern[row][heartCol] === 1) {
+      const isHeart = heartCol >= 0 && heartCol < heartCols && heartPattern[row][heartCol] === 1;
+
+      if (isHeart) {
+        // 3. Celda del corazón
         heartCells += `<rect class="cell" x="${x}" y="${y}" width="${pixelSize}" height="${pixelSize}" fill="#39d353" />\n`;
+      } else {
+        // 2. Celda de la onda expansiva (para todo el resto de la cuadrícula)
+        const dist = Math.hypot(col - centerCol, row - centerRow);
+        // Retraso proporcional a la distancia para que viaje hacia los extremos
+        const delay = (dist * 0.028).toFixed(3);
+        rippleCells += `<rect class="cell ripple-cell" style="animation-delay: ${delay}s;" x="${x}" y="${y}" width="${pixelSize}" height="${pixelSize}" />\n`;
       }
     }
   }
@@ -53,26 +67,56 @@ function generateSVG() {
       rx: 2px;
       ry: 2px;
     }
+
+    /* Animación del latido del corazón (ciclo de 1.8s) */
     @keyframes heartbeat {
       0%, 100% { transform: scale(1); }
-      15% { transform: scale(1.12); }
-      30% { transform: scale(1); }
-      45% { transform: scale(1.08); }
-      60% { transform: scale(1); }
+      12% { transform: scale(1.14); }
+      24% { transform: scale(1); }
+      36% { transform: scale(1.08); }
+      48% { transform: scale(1); }
     }
+
+    /* Onda de energía verde suave/translúcida sincronizada con el latido */
+    @keyframes rippleWave {
+      0%, 10% {
+        fill: #39d353;
+        fill-opacity: 0;
+      }
+      22% {
+        fill: #39d353;
+        fill-opacity: 0.35;
+      }
+      45%, 100% {
+        fill: #39d353;
+        fill-opacity: 0;
+      }
+    }
+
     .heart-layer {
       transform-box: fill-box;
       transform-origin: center;
-      animation: heartbeat 1.3s infinite ease-in-out;
+      animation: heartbeat 1.8s infinite ease-in-out;
+    }
+
+    .ripple-cell {
+      fill: #39d353;
+      fill-opacity: 0;
+      animation: rippleWave 1.8s infinite ease-out;
     }
   </style>
 
-  <!-- Fondo de la cuadrícula de contribuciones -->
+  <!-- Capa 1: Fondo de la cuadrícula de contribuciones -->
   <g>
     ${backgroundCells}
   </g>
 
-  <!-- Capa animada del corazón centrada -->
+  <!-- Capa 2: Onda expansiva hacia los extremos -->
+  <g>
+    ${rippleCells}
+  </g>
+
+  <!-- Capa 3: Corazón ampliado centrado -->
   <g class="heart-layer">
     ${heartCells}
   </g>
@@ -80,4 +124,4 @@ function generateSVG() {
 }
 
 fs.writeFileSync('heart-contribution.svg', generateSVG());
-console.log('SVG del corazón sobre tabla de commits generado con éxito.');
+console.log('SVG del corazón ampliado con onda expansiva generado con éxito.');

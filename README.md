@@ -61,9 +61,8 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=AndreaV-655&layout=compact&theme=transparent&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=AndreaV-655&layout=compact&theme=transparent&hide_border=true" alt="Top Languages" />
 </p>
-
 ---
 
 ### ❤️ Activity Heartbeat
