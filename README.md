@@ -53,10 +53,6 @@
 ### 📈 GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=AndreaV-655&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true" alt="GitHub Repositories Stats" />
-</p>
-
-<p align="center">
   <img src="https://komarev.com/ghpvc/?username=AndreaV-655&label=PROFILE+VIEWS&color=0e75b6&style=for-the-badge&logo=github" alt="Profile Views" />
 </p>
 
