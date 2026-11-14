@@ -61,11 +61,11 @@
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/langs?username=AndreaV-655&theme=vision-friendly-dark" alt="Top Languages" />
+  <img src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=AndreaV-655&layout=compact&theme=transparent&hide_border=true" alt="Top Languages" />
 </p>
 ---
 
-### ❤️ Activity Heartbeat
+### Heartbeat
 
 <p align="center">
   <img src="heart-contribution.svg" alt="Heartbeat Animation" width="100%" />
