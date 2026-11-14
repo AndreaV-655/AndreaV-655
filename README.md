@@ -18,9 +18,6 @@
     <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="mailto:andrea.sofiavb26@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" alt="Gmail" />
-  </a>
 </p>
 
 ---
