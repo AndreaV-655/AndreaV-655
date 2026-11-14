@@ -45,7 +45,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=c,dart,java,vercel, unity,react" alt="Currently Learning" />
+    <img src="https://skillicons.dev/icons?i=c,dart,java,vercel, unity,linux" alt="Currently Learning" />
   </a>
 </p>
 
