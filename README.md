@@ -25,15 +25,22 @@
 ### 💻 Tech Stack & Tools
 
 <p align="center">
-  <!-- Lenguajes, Web y Herramientas Principales -->
-  <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=py,js,html,css,powershell" alt="Core & Web" />
-  </a>
+  <!-- Fila 1 -->
+  <a href="https://www.python.org" target="_blank"><img src="https://skillicons.dev/icons?i=py" alt="Python" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img src="https://skillicons.dev/icons?i=html" alt="HTML5" /></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img src="https://skillicons.dev/icons?i=css" alt="CSS3" /></a>
+  <a href="https://react.dev" target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React" /></a>
+  <a href="https://tailwindcss.com" target="_blank"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" /></a>
   <br/>
-  <!-- Backend, Bases de Datos, Motores y Productividad -->
-  <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=postgres,supabase,git,github,notion" alt="Tools & Platforms" />
-  </a>
+  <!-- Fila 2 -->
+  <a href="https://www.postgresql.org" target="_blank"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" /></a>
+  <a href="https://supabase.com" target="_blank"><img src="https://skillicons.dev/icons?i=supabase" alt="Supabase" /></a>
+  <a href="https://git-scm.com" target="_blank"><img src="https://skillicons.dev/icons?i=git" alt="Git" /></a>
+  <a href="https://github.com" target="_blank"><img src="https://skillicons.dev/icons?i=github" alt="GitHub" /></a>
+  <a href="https://www.linux.org" target="_blank"><img src="https://skillicons.dev/icons?i=linux" alt="Linux" /></a>
+  <a href="https://unity.com" target="_blank"><img src="https://skillicons.dev/icons?i=unity" alt="Unity" /></a>
+  <a href="https://www.notion.so" target="_blank"><img src="https://skillicons.dev/icons?i=notion" alt="Notion" /></a>
 </p>
 
 ---
@@ -41,15 +48,17 @@
 ### 🌱 Currently Learning
 
 <p align="center">
-  <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=c,dart,java,vercel" alt="Currently Learning" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=unity,linux,r,react" alt="Currently Learning" />
-  </a>
+  <!-- Fila 1 -->
+  <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><img src="https://skillicons.dev/icons?i=c" alt="C" /></a>
+  <a href="https://dart.dev" target="_blank"><img src="https://skillicons.dev/icons?i=dart" alt="Dart" /></a>
+  <a href="https://www.java.com" target="_blank"><img src="https://skillicons.dev/icons?i=java" alt="Java" /></a>
+  <a href="https://vercel.com" target="_blank"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" /></a>
+  <br/>
+  <!-- Fila 2 -->
+  <a href="https://unity.com" target="_blank"><img src="https://skillicons.dev/icons?i=unity" alt="Unity" /></a>
+  <a href="https://www.linux.org" target="_blank"><img src="https://skillicons.dev/icons?i=linux" alt="Linux Mint" /></a>
+  <a href="https://www.r-project.org" target="_blank"><img src="https://skillicons.dev/icons?i=r" alt="R" /></a>
+  <a href="https://react.dev" target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React" /></a>
 </p>
 
 ---
