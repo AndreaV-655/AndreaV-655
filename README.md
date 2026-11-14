@@ -18,9 +18,6 @@
     <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="mailto:andrea.sofiavb26@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" alt="Gmail" />
-  </a>
 </p>
 
 ---
@@ -30,7 +27,7 @@
 <p align="center">
   <!-- Lenguajes, Web y Herramientas Principales -->
   <a href="https://skillicons.dev" target="_blank">
-    <img src="https://skillicons.dev/icons?i=py,js,html,css,react" alt="Core & Web" />
+    <img src="https://skillicons.dev/icons?i=py,js,html,css" alt="Core & Web" />
   </a>
   <br/>
   <!-- Backend, Bases de Datos, Motores y Productividad -->
@@ -51,10 +48,6 @@
 
 ---
 ### 📈 GitHub Metrics
-
-<p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=AndreaV-655&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true" alt="GitHub Repositories Stats" />
-</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=AndreaV-655&label=PROFILE+VIEWS&color=0e75b6&style=for-the-badge&logo=github" alt="Profile Views" />
