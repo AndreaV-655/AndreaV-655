@@ -10,9 +10,7 @@
 ### 📫 Connect with Me
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/andrea-vargas-s" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn" />
-  </a>
+ 
   &nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/andreaenstem" target="_blank">
     <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
