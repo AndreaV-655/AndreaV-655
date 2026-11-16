@@ -11,7 +11,6 @@
 
 <p align="center">
  
-  &nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/andreaenstem" target="_blank">
     <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram" />
   </a>
